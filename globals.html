@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>boa-sdk-ts | boa-sdk-ts</title>
-	<meta name="description" content="Documentation for boa-sdk-ts">
+	<title>wallet-lib | wallet-lib</title>
+	<meta name="description" content="Documentation for wallet-lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -2693,7 +2693,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">boa-sdk-ts</a></strong>
+					<strong><a href="index.html">wallet-lib</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2740,7 +2740,7 @@ img {
 			<a href="classes/boaclient.html" class="tsd-kind-icon">BOAClient</a>
 		</li>
 		<li class=" tsd-kind-class">
-			<a href="classes/badrequesterror.html" class="tsd-kind-icon">Bad<wbr>Request<wbr>Error</a>
+			<a href="classes/login.html" class="tsd-kind-icon">Bad<wbr>Request<wbr>Error</a>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="classes/bitfield.html" class="tsd-kind-icon">Bit<wbr>Field</a>
@@ -2897,20 +2897,20 @@ img {
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<a href="#boa-sdk-ts" id="boa-sdk-ts" style="color: inherit; text-decoration: none;">
-				<h1>boa-sdk-ts</h1>
+			<a href="#wallet-lib" id="wallet-lib" style="color: inherit; text-decoration: none;">
+				<h1>wallet-lib</h1>
 			</a>
 			<p>SDK to interface with the BOSAGORA blockchain
-				boa-sdk-ts is a TypeScript/JavaScript library for communicating with the Stoa API server.
+				wallet-lib is a TypeScript/JavaScript library for communicating with the Stoa API server.
 			It also has utility functions such as hashing and pre-image validation.</p>
 			<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 				<h2>Install</h2>
 			</a>
-			<pre><code class="language-bash">$ npm install --save boa-sdk-ts</code></pre>
+			<pre><code class="language-bash">$ npm install --save wallet-lib</code></pre>
 			<a href="#import-the-your-library" id="import-the-your-library" style="color: inherit; text-decoration: none;">
 				<h2>Import the your library</h2>
 			</a>
-			<p><code>import * as BoaSdk from &quot;boa-sdk-ts&quot;;</code></p>
+			<p><code>import * as BoaSdk from &quot;wallet-lib&quot;;</code></p>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
 			</a>
@@ -2968,11 +2968,11 @@ boa_client.getValidator(<span class="hljs-string">&quot;GA3DMXTREDC4AIUTHRFIXCKW
 			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 				<h2>Documentation</h2>
 			</a>
-			<p><a href="https://bpfkorea.github.io/boa-sdk-ts">BOA-SDK for TypeScript documentation</a></p>
+			<p><a href="https://bpfkorea.github.io/wallet-lib">BOA-SDK for TypeScript documentation</a></p>
 			<a href="#testing" id="testing" style="color: inherit; text-decoration: none;">
 				<h2>Testing</h2>
 			</a>
-			<pre><code class="language-bash">$ git <span class="hljs-built_in">clone</span> https://github.com/bpfkorea/boa-sdk-ts.git
+			<pre><code class="language-bash">$ git <span class="hljs-built_in">clone</span> https://github.com/bpfkorea/wallet-lib.git
 $ npm install
 $ npm run build
 $ npm <span class="hljs-built_in">test</span></code></pre>
@@ -2995,7 +2995,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-class"><a href="classes/boaclient.html" class="tsd-kind-icon">BOAClient</a></li>
-							<li class="tsd-kind-class"><a href="classes/badrequesterror.html" class="tsd-kind-icon">Bad<wbr>Request<wbr>Error</a></li>
+							<li class="tsd-kind-class"><a href="classes/login.html" class="tsd-kind-icon">Bad<wbr>Request<wbr>Error</a></li>
 							<li class="tsd-kind-class"><a href="classes/bitfield.html" class="tsd-kind-icon">Bit<wbr>Field</a></li>
 							<li class="tsd-kind-class"><a href="classes/block.html" class="tsd-kind-icon">Block</a></li>
 							<li class="tsd-kind-class"><a href="classes/blockheader.html" class="tsd-kind-icon">Block<wbr>Header</a></li>
@@ -3071,10 +3071,10 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 			<section class="tsd-panel tsd-member tsd-kind-variable">
 				<a name="request" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> Request</h3>
-				<div class="tsd-signature tsd-kind-icon">Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span><span class="tsd-signature-symbol"> = axios.create({headers: {&quot;X-Client-Name&quot;: &quot;boa-sdk-ts&quot;,&quot;X-Client-Version&quot;: version,}})</span></div>
+				<div class="tsd-signature tsd-kind-icon">Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span><span class="tsd-signature-symbol"> = axios.create({headers: {&quot;X-Client-Name&quot;: &quot;wallet-lib&quot;,&quot;X-Client-Version&quot;: version,}})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/net/Request.ts#L21">src/modules/net/Request.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/net/Request.ts#L21">src/modules/net/Request.ts:21</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3091,7 +3091,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/utils/CRC16.ts#L35">src/modules/utils/CRC16.ts:35</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/utils/CRC16.ts#L35">src/modules/utils/CRC16.ts:35</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3125,7 +3125,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/net/error/ErrorTypes.ts#L92">src/modules/net/error/ErrorTypes.ts:92</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/net/error/ErrorTypes.ts#L92">src/modules/net/error/ErrorTypes.ts:92</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3158,7 +3158,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/common/Hash.ts#L130">src/modules/common/Hash.ts:130</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/common/Hash.ts#L130">src/modules/common/Hash.ts:130</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3190,7 +3190,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/common/Hash.ts#L172">src/modules/common/Hash.ts:172</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/common/Hash.ts#L172">src/modules/common/Hash.ts:172</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3224,7 +3224,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/common/Hash.ts#L142">src/modules/common/Hash.ts:142</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/common/Hash.ts#L142">src/modules/common/Hash.ts:142</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3263,7 +3263,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/common/Hash.ts#L187">src/modules/common/Hash.ts:187</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/common/Hash.ts#L187">src/modules/common/Hash.ts:187</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3300,7 +3300,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/script/Opcodes.ts#L191">src/modules/script/Opcodes.ts:191</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/script/Opcodes.ts#L191">src/modules/script/Opcodes.ts:191</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3332,7 +3332,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/script/Opcodes.ts#L176">src/modules/script/Opcodes.ts:176</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/script/Opcodes.ts#L176">src/modules/script/Opcodes.ts:176</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3364,7 +3364,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/script/Opcodes.ts#L210">src/modules/script/Opcodes.ts:210</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/script/Opcodes.ts#L210">src/modules/script/Opcodes.ts:210</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3396,7 +3396,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/common/Hash.ts#L158">src/modules/common/Hash.ts:158</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/common/Hash.ts#L158">src/modules/common/Hash.ts:158</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3435,7 +3435,7 @@ $ npm <span class="hljs-built_in">test</span></code></pre>
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/bpfkorea/boa-sdk-ts/blob/21ee8e4/src/modules/utils/CRC16.ts#L50">src/modules/utils/CRC16.ts:50</a></li>
+								<li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/utils/CRC16.ts#L50">src/modules/utils/CRC16.ts:50</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

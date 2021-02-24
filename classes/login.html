@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>keypair | wallet-lib</title>
+  <title>login | wallet-lib</title>
   <meta name="description" content="Documentation for wallet-lib">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -3349,28 +3349,13 @@
   <nav class="tsd-navigation secondary">
     <ul>
       <li class="current tsd-kind-class">
-        <a href="keypair.html" class="tsd-kind-icon">KeyPair</a>
+        <a href="login.html" class="tsd-kind-icon">Login</a>
         <ul>
           <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#getMnemonics" class="tsd-kind-icon">getMnemonics</a>
+            <a href="login.html#address" class="tsd-kind-icon">loginUser</a>
           </li>
           <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#fromMnemonic" class="tsd-kind-icon">fromMnemonic</a>
-          </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#recoverKeys" class="tsd-kind-icon">recoverKeys</a>
-          </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validPublicKey" class="tsd-kind-icon">validPublicKey</a>
-          </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#getPublicKey" class="tsd-kind-icon">getPublicKey</a>
-          </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validSecretkey" class="tsd-kind-icon">validSecretkey</a>
-          </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validateSecretAgainstPublickey" class="tsd-kind-icon">validate<wbr>Secret<wbr>Against<wbr>Publickey</a>
+            <a href="login.html#verifyjwt" class="tsd-kind-icon">verifyJWT</a>
           </li>
         </ul>
       </li>
@@ -3381,7 +3366,7 @@
       <section class="tsd-panel tsd-comment">
         <div class="tsd-comment tsd-typography">
           <div class="lead">
-            <p> The class that will help in keypair. It help to generate jwt and verify it.</p>
+            <p> The class that will help in login. It help to generate jwt and verify it.</p>
           </div>
         </div>
       </section>
@@ -3389,196 +3374,62 @@
         <h3>Hierarchy</h3>
         <ul class="tsd-hierarchy">
           <li>
-            <span class="target">keypair</span>
+            <span class="target">login</span>
           </li>
         </ul>
       </section>
       <section class="tsd-panel-group tsd-member-group ">
         <h2>Methods</h2>
         <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="getMnemonics" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Mnemonics</h3>
+          <a name="address" class="tsd-anchor"></a>
+          <h3><span class="tsd-flag ts-flagStatic">Static</span> login<wbr>User</h3>
           <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Mnemonics<span class="tsd-signature-symbol">(</span>language<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+            <li class="tsd-signature tsd-kind-icon">login<wbr>User<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L52">src/modules/data/KeyPair.ts:52</a></li>
+                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/login.ts#L33">src/modules/data/login.ts:33</a></li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>Get Mnemonics to generate keypair</p>
+                  <p>Generate JWT by passing Public or Secret seed</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>language: <span  class="tsd-signature-type">string</span></h5>
+                  <h5>key: <span  class="tsd-signature-type">string</span></h5>
                   <div class="tsd-comment tsd-typography">
-                    <p>Get mnemonics against specified language</p>
+                    <p>The instance of Seed or Public key</p>
                   </div>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
                 class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
                 class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns mnemonics to generate the key pair.</p>
+              <p>Returns jwt against the key. Encrypted in case of Secret Seed.</p>
             </li>
           </ul>
         </section>
         <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="fromMnemonic" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Mnemonics</h3>
+          <a name="verifyjwt" class="tsd-anchor"></a>
+          <h3><span class="tsd-flag ts-flagStatic">Static</span> verify<wbr>JWT</h3>
           <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">from<wbr>Mnemonics<span class="tsd-signature-symbol">(</span>mnemonic<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+            <li class="tsd-signature tsd-kind-icon">verify<wbr>JWT<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L78">src/modules/data/KeyPair.ts:78</a></li>
+                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/login.ts#L95">src/modules/data/login.ts:95</a></li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>Generate keyPairs against the mnemonics</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>mnemonic: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                  </div>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns keypairs against the mnemonics</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="recoverKeys" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> recover<wbr>Keys</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">recover<wbr>Keys<span class="tsd-signature-symbol">(</span>mnemonics<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L106">src/modules/data/KeyPair.ts:106</a></li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>It will regenerate the lost keypairs</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>mnemonics: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                  </div>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the keypairs against the mnemonics</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validPublicKey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> valid<wbr>Public<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">valid<wbr>Public<wbr><span class="tsd-signature-symbol">(</span>publicKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L149">src/modules/data/KeyPair.ts:149</a></li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>It will verify the provided publicKey</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>publicKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Public key</p>
-                  </div>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of secretKey whether valid or invalid</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="getPublicKey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Public<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Public<wbr>Key<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L181">src/modules/data/KeyPair.ts:181</a></li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>It will generate the publicKey of the secret seed</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>secretKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
-                  </div>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the publicKey against the secretKey</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validSecretkey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> valid<wbr>Secret<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">valid<wbr>Secret<wbr>Key<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L210">src/modules/data/KeyPair.ts:210</a></li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>It will verify the secretKey</p>
+                  <p>It will Verify the JWT</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
@@ -3586,52 +3437,14 @@
                 <li>
                   <h5>token: <span  class="tsd-signature-type">string</span></h5>
                   <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
+                    <p>The instance of Seed or Public key</p>
                   </div>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
                 class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
                 class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of secretKey whether valid or invalid</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validateSecretAgainstPublickey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> validate<wbr>Secret<wbr>Against<wbr>Publickey</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">validate<wbr>Secret<wbr>Against<wbr>Publickey<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">, </span>publicKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol"></span>)</span><span class="tsd-signature-symbol"></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L242">src/modules/data/KeyPair.ts:242</a></li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>It will verify the public key against the secret key</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>secretKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
-                  </div>
-                  <h5>publicKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Public key</p>
-                  </div>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of key whether publicKey is of the same secretKey or not</p>
+              <p>Returns the status of JWT. Whether it's a valid or not</p>
             </li>
           </ul>
         </section>

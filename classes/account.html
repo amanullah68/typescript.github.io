@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>keypair | wallet-lib</title>
+  <title>Account | wallet-lib</title>
   <meta name="description" content="Documentation for wallet-lib">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -405,15 +405,6 @@
     button[disabled],
     html input[disabled] {
       cursor: default;
-    }
-
-    /**
- * * 1. Address box sizing set to content-box in IE 8/9.
- * * 2. Remove excess padding in IE 8/9.
- * * 3. Remove excess padding in IE 7.
- * *    Known issue: excess padding remains in IE 6. */
-    input {
-      /* 3 */
     }
 
     input[type=checkbox],
@@ -3349,28 +3340,35 @@
   <nav class="tsd-navigation secondary">
     <ul>
       <li class="current tsd-kind-class">
-        <a href="keypair.html" class="tsd-kind-icon">KeyPair</a>
+        <a href="account.html" class="tsd-kind-icon">Account</a>
         <ul>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#getMnemonics" class="tsd-kind-icon">getMnemonics</a>
+          <li class=" tsd-kind-constructor tsd-parent-kind-class">
+            <a href="account.html#constructor" class="tsd-kind-icon">constructor</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#fromMnemonic" class="tsd-kind-icon">fromMnemonic</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#accountBalanceSummary" class="tsd-kind-icon">account<wbr>Balance<wbr>Summary</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#recoverKeys" class="tsd-kind-icon">recoverKeys</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getUTXOS" class="tsd-kind-icon">get<wbr>UTXOS</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validPublicKey" class="tsd-kind-icon">validPublicKey</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getSelfBalance" class="tsd-kind-icon">get<wbr>Self<wbr>Balance</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#getPublicKey" class="tsd-kind-icon">getPublicKey</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getTotalBalance" class="tsd-kind-icon">get<wbr>Total<wbr>Balance</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validSecretkey" class="tsd-kind-icon">validSecretkey</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getTransactionHistory" class="tsd-kind-icon">get<wbr>Transaction<wbr>History</a>
           </li>
-          <li class=" tsd-kind-property tsd-parent-kind-class">
-            <a href="keypair.html#validateSecretAgainstPublickey" class="tsd-kind-icon">validate<wbr>Secret<wbr>Against<wbr>Publickey</a>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getTransactionOverview" class="tsd-kind-icon">get<wbr>Transaction<wbr>Overview</a>
+          </li>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getPendingTransactions" class="tsd-kind-icon">get<wbr>Pending<wbr>Transactions</a>
+          </li>
+          <li class=" tsd-kind-method tsd-parent-kind-class">
+            <a href="account.html#getPendingTransactionOverview"
+              class="tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview</a>
           </li>
         </ul>
       </li>
@@ -3381,7 +3379,9 @@
       <section class="tsd-panel tsd-comment">
         <div class="tsd-comment tsd-typography">
           <div class="lead">
-            <p> The class that will help in keypair. It help to generate jwt and verify it.</p>
+            <p>The class that contains accountBalanceSummary, getUTXOS, getSelfBalance, getTotalBalance,
+              getTransactionHistory, getTransactionOverview, getPendingTransactions and getPendingTransactionOverview
+            </p>
           </div>
         </div>
       </section>
@@ -3389,252 +3389,425 @@
         <h3>Hierarchy</h3>
         <ul class="tsd-hierarchy">
           <li>
-            <span class="target">keypair</span>
+            <span class="target">Account</span>
           </li>
         </ul>
       </section>
+      <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+          <div class="tsd-index-content">
+            <section class="tsd-index-section ">
+              <h3>Constructors</h3>
+              <ul class="tsd-index-list">
+                <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="account.html#constructor"
+                    class="tsd-kind-icon">constructor</a></li>
+              </ul>
+            </section>
+            <section class="tsd-index-section ">
+              <h3>Methods</h3>
+              <ul class="tsd-index-list">
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#accountBalanceSummary"
+                    class="tsd-kind-icon">account<wbr>Balance<wbr>Summary</a></li>
+                <li class=" tsd-kind-method tsd-parent-kind-class"><a href="account.html#getUTXOS"
+                    class="tsd-kind-icon">get<wbr>UTXOS</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getSelfBalance"
+                    class="tsd-kind-icon">get<wbr>Self<wbr>Balance</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTotalBalance"
+                    class="tsd-kind-icon">get<wbr>Total<wbr>Balance</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTransactionHistory"
+                    class="tsd-kind-icon">get<wbr>Transaction<wbr>History</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTransactionOverview"
+                    class="tsd-kind-icon">get<wbr>Transaction<wbr>Overview</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getPendingTransactions"
+                    class="tsd-kind-icon">get<wbr>Pending<wbr>Transactions</a></li>
+                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getPendingTransactionOverview"
+                    class="tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview</a></li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </section>
+      <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors</h2>
+        <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+          <a name="constructor" class="tsd-anchor"></a>
+          <h3>constructor</h3>
+          <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">new <wbr>Account<span
+                class="tsd-signature-symbol">(</span>boaClient<span class="tsd-signature-symbol">: </span><a
+                href="boaclient.html" class="tsd-signature-type">BOAClient</a><span class="tsd-signature-symbol">):
+              </span><a href="account.html" class="tsd-signature-type">Account</a>
+          </ul>
+          <ul class="tsd-descriptions">
+            <li class="tsd-description">
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L33">src/modules/data/Account.ts:33</a>
+                  </li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>Constructor</p>
+                </div>
+              </div>
+              <h4 class="tsd-parameters-title">Parameters</h4>
+              <ul class="tsd-parameters">
+                <li>
+                  <h5>boaClient: <a href="boaclient.html" class="tsd-signature-type">BOAClient</a></h5>
+                  <div class="tsd-comment tsd-typography">
+                    <div class="lead">
+                      <p>The instance of BOAClient</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <h4 class="tsd-returns-title">Returns <a href="account.html" class="tsd-signature-type">Account</a></h4>
+            </li>
+          </ul>
+        </section>
+      </section>
+      </section>
       <section class="tsd-panel-group tsd-member-group ">
         <h2>Methods</h2>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="getMnemonics" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Mnemonics</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Mnemonics<span class="tsd-signature-symbol">(</span>language<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="accountBalanceSummary" class="tsd-anchor"></a>
+          <h3>account<wbr>Balance<wbr>Summary</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">account<wbr>Balance<wbr>Summary<span
+                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string</span>, amount<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span
+                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L52">src/modules/data/KeyPair.ts:52</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L43">src/modules/data/Account.ts:43</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>Get Mnemonics to generate keypair</p>
+                  <p>Create an account balance summary</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>language: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>Get mnemonics against specified language</p>
-                  </div>
+                  <h5>address: <span class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5>amount: <span class="tsd-signature-type">number</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns mnemonics to generate the key pair.</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>It will return the balance summary of the account</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="fromMnemonic" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Mnemonics</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">from<wbr>Mnemonics<span class="tsd-signature-symbol">(</span>mnemonic<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getUTXOS" class="tsd-anchor"></a>
+          <h3>get<wbr>UTXOS</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>UTXOS<span class="tsd-signature-symbol">(</span>address<span
+                class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>)</span><span
+                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L78">src/modules/data/KeyPair.ts:78</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L84">src/modules/data/Account.ts:84</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>Generate keyPairs against the mnemonics</p>
+                  <p>Request UTXOs of public key</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>mnemonic: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                  </div>
+                  <h5>address: <span class="tsd-signature-type">string</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns keypairs against the mnemonics</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="recoverKeys" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> recover<wbr>Keys</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">recover<wbr>Keys<span class="tsd-signature-symbol">(</span>mnemonics<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getSelfBalance" class="tsd-anchor"></a>
+          <h3>get<wbr>Self<wbr>Balance</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Self<wbr>Balance<span
+                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
+              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L106">src/modules/data/KeyPair.ts:106</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L128">src/modules/data/Account.ts:128</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>It will regenerate the lost keypairs</p>
+                  <p>Request balance of public key</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>mnemonics: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                  </div>
+                  <h5>address: <span class="tsd-signature-type">string</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the keypairs against the mnemonics</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validPublicKey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> valid<wbr>Public<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">valid<wbr>Public<wbr><span class="tsd-signature-symbol">(</span>publicKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getTotalBalance" class="tsd-anchor"></a>
+          <h3>get<wbr>Total<wbr>Balance</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Balance<span
+                class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>)</span><span
+                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L149">src/modules/data/KeyPair.ts:149</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L203">src/modules/data/Account.ts:203</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>It will verify the provided publicKey</p>
+                  <p>Request balance of public keys</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>publicKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Public key</p>
-                  </div>
+                  <h5>addresses: <span class="tsd-signature-symbol">: </span><span
+                      class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
+                      class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of secretKey whether valid or invalid</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="getPublicKey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Public<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Public<wbr>Key<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getTransactionHistory" class="tsd-anchor"></a>
+          <h3>get<wbr>Transaction<wbr>History</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>History<span
+                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string, type<span class="tsd-signature-symbol">: </span><span
+                  class="tsd-signature-type">string, beginDate<span class="tsd-signature-symbol">: </span><span
+                    class="tsd-signature-type">string, endDate<span class="tsd-signature-symbol">: </span><span
+                      class="tsd-signature-type">string, peer<span class="tsd-signature-symbol">: </span><span
+                        class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
+                        class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></span>,
+                    pageSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string,
+                      page<span class="tsd-signature-symbol">: </span><span
+                        class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
+                    </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                    class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L181">src/modules/data/KeyPair.ts:181</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L263">src/modules/data/Account.ts:263</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>It will generate the publicKey of the secret seed</p>
+                  <p>Request transaction history of public key</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>secretKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
-                  </div>
+                  <h5>address: <span class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> type: <span
+                      class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> beginDate: <span
+                      class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> endDate: <span
+                      class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> peer: </span><span
+                      class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
+                      class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> pageSize: <span
+                      class="tsd-signature-type">string</span></h5>
+                </li>
+                <li>
+                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> page: <span
+                      class="tsd-signature-type">string</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the publicKey against the secretKey</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validSecretkey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> valid<wbr>Secret<wbr>Key</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">valid<wbr>Secret<wbr>Key<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getTransactionOverview" class="tsd-anchor"></a>
+          <h3>get<wbr>Transaction<wbr>Overview</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Overview<span
+                class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
+              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L210">src/modules/data/KeyPair.ts:210</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L407">src/modules/data/Account.ts:407</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>It will verify the secretKey</p>
+                  <p>Request transaction overview of transaction hash</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>token: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
-                  </div>
+                  <h5>txHash: <span class="tsd-signature-type">string</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of secretKey whether valid or invalid</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-          <a name="validateSecretAgainstPublickey" class="tsd-anchor"></a>
-          <h3><span class="tsd-flag ts-flagStatic">Static</span> validate<wbr>Secret<wbr>Against<wbr>Publickey</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-            <li class="tsd-signature tsd-kind-icon">validate<wbr>Secret<wbr>Against<wbr>Publickey<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol">, </span>publicKey<span class="tsd-signature-symbol">: </span>string<span class="tsd-signature-symbol"></span>)</span><span class="tsd-signature-symbol"></li>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getPendingTransactions" class="tsd-anchor"></a>
+          <h3>get<wbr>Pending<wbr>Transactions</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Pending<wbr>Transactions<span
+                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
+              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/KeyPair.ts#L242">src/modules/data/KeyPair.ts:242</a></li>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L450">src/modules/data/Account.ts:450</a>
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>It will verify the public key against the secret key</p>
+                  <p>Request pending transactions of transaction account</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>secretKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Seed</p>
-                  </div>
-                  <h5>publicKey: <span  class="tsd-signature-type">string</span></h5>
-                  <div class="tsd-comment tsd-typography">
-                    <p>The instance of Public key</p>
-                  </div>
+                  <h5>address: <span class="tsd-signature-type">string</span></h5>
                 </li>
               </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Returns the status of key whether publicKey is of the same secretKey or not</p>
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
             </li>
           </ul>
         </section>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+          <a name="getPendingTransactionOverview" class="tsd-anchor"></a>
+          <h3>get<wbr>Pending<wbr>Transaction<wbr>Overview</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+            <li class="tsd-signature tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview<span
+                class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><span
+                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
+              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
+                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
+          </ul>
+          <ul class="tsd-descriptions">
+            <li class="tsd-description">
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in <a
+                      href="https://github.com/bpfkorea/wallet-lib/blob/21ee8e4/src/modules/data/Account.ts#L495">src/modules/data/Account.ts:495</a>
+                  </li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>Request pending transaction overview of transaction hash</p>
+                </div>
+              </div>
+              <h4 class="tsd-parameters-title">Parameters</h4>
+              <ul class="tsd-parameters">
+                <li>
+                  <h5>txHash: <span class="tsd-signature-type">string</span></h5>
+                </li>
+              </ul>
+              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
+                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                  class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Promise that resolves or rejects with response from the Stoa</p>
+            </li>
+          </ul>
+        </section>
+      </section>
       <footer>
         <div class="container">
           <h2>Legend</h2>
