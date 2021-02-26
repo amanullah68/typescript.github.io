@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Account | wallet-lib</title>
+  <title>crypto | wallet-lib</title>
   <meta name="description" content="Documentation for wallet-lib">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -3340,35 +3340,13 @@
   <nav class="tsd-navigation secondary">
     <ul>
       <li class="current tsd-kind-class">
-        <a href="account.html" class="tsd-kind-icon">Account</a>
+        <a href="crypto.html" class="tsd-kind-icon">Crypto</a>
         <ul>
-          <li class=" tsd-kind-constructor tsd-parent-kind-class">
-            <a href="account.html#constructor" class="tsd-kind-icon">constructor</a>
+          <li class=" tsd-kind-property tsd-parent-kind-class">
+            <a href="crypto.html#encrypt" class="tsd-kind-icon">encrypt</a>
           </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#accountBalanceSummary" class="tsd-kind-icon">account<wbr>Balance<wbr>Summary</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getUTXOS" class="tsd-kind-icon">get<wbr>UTXOS</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getSelfBalance" class="tsd-kind-icon">get<wbr>Self<wbr>Balance</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getTotalBalance" class="tsd-kind-icon">get<wbr>Total<wbr>Balance</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getTransactionHistory" class="tsd-kind-icon">get<wbr>Transaction<wbr>History</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getTransactionOverview" class="tsd-kind-icon">get<wbr>Transaction<wbr>Overview</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getPendingTransactions" class="tsd-kind-icon">get<wbr>Pending<wbr>Transactions</a>
-          </li>
-          <li class=" tsd-kind-method tsd-parent-kind-class">
-            <a href="account.html#getPendingTransactionOverview"
-              class="tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview</a>
+          <li class=" tsd-kind-property tsd-parent-kind-class">
+            <a href="crypto.html#decrypt" class="tsd-kind-icon">decrypt</a>
           </li>
         </ul>
       </li>
@@ -3379,9 +3357,7 @@
       <section class="tsd-panel tsd-comment">
         <div class="tsd-comment tsd-typography">
           <div class="lead">
-            <p>The class that contains accountBalanceSummary, getUTXOS, getSelfBalance, getTotalBalance,
-              getTransactionHistory, getTransactionOverview, getPendingTransactions and getPendingTransactionOverview
-            </p>
+            <p>Help to encrypt and decrypt data.</p>
           </div>
         </div>
       </section>
@@ -3389,425 +3365,76 @@
         <h3>Hierarchy</h3>
         <ul class="tsd-hierarchy">
           <li>
-            <span class="target">Account</span>
+            <span class="target">Crypto</span>
           </li>
         </ul>
       </section>
-      <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-          <div class="tsd-index-content">
-            <section class="tsd-index-section ">
-              <h3>Constructors</h3>
-              <ul class="tsd-index-list">
-                <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="account.html#constructor"
-                    class="tsd-kind-icon">constructor</a></li>
-              </ul>
-            </section>
-            <section class="tsd-index-section ">
-              <h3>Methods</h3>
-              <ul class="tsd-index-list">
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#accountBalanceSummary"
-                    class="tsd-kind-icon">account<wbr>Balance<wbr>Summary</a></li>
-                <li class=" tsd-kind-method tsd-parent-kind-class"><a href="account.html#getUTXOS"
-                    class="tsd-kind-icon">get<wbr>UTXOS</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getSelfBalance"
-                    class="tsd-kind-icon">get<wbr>Self<wbr>Balance</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTotalBalance"
-                    class="tsd-kind-icon">get<wbr>Total<wbr>Balance</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTransactionHistory"
-                    class="tsd-kind-icon">get<wbr>Transaction<wbr>History</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getTransactionOverview"
-                    class="tsd-kind-icon">get<wbr>Transaction<wbr>Overview</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getPendingTransactions"
-                    class="tsd-kind-icon">get<wbr>Pending<wbr>Transactions</a></li>
-                <li class="tsd-kind-method tsd-parent-kind-class"><a href="account.html#getPendingTransactionOverview"
-                    class="tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview</a></li>
-              </ul>
-            </section>
-          </div>
-        </section>
-      </section>
       <section class="tsd-panel-group tsd-member-group ">
-        <h2>Constructors</h2>
-        <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-          <a name="constructor" class="tsd-anchor"></a>
-          <h3>constructor</h3>
-          <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">new <wbr>Account<span
-                class="tsd-signature-symbol">(</span>boaClient<span class="tsd-signature-symbol">: </span><a
-                href="boaclient.html" class="tsd-signature-type">BOAClient</a><span class="tsd-signature-symbol">):
-              </span><a href="account.html" class="tsd-signature-type">Account</a>
+        <h2>Methods</h2>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+          <a name="encrypt" class="tsd-anchor"></a>
+          <h3><span class="tsd-flag ts-flagStatic">Static</span> encrypt</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+            <li class="tsd-signature tsd-kind-icon">encrypt<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span>any<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
           </ul>
           <ul class="tsd-descriptions">
             <li class="tsd-description">
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L32">src/modules/data/Account.ts:32</a>
-                  </li>
+                  <li>Defined in <a href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/crypto/crypto.ts#L40">src/modules/data/crypto/Crypto.ts:40</a></li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
-                  <p>Constructor</p>
+                  <p>Get data in encrypted form.</p>
                 </div>
               </div>
               <h4 class="tsd-parameters-title">Parameters</h4>
               <ul class="tsd-parameters">
                 <li>
-                  <h5>boaClient: <a href="boaclient.html" class="tsd-signature-type">BOAClient</a></h5>
+                  <h5>text: <span  class="tsd-signature-type">any</span></h5>
+                </li>
+              </ul>
+              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
+                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Returns encrypted text object</p>
+            </li>
+          </ul>
+        </section>
+        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+          <a name="decrypt" class="tsd-anchor"></a>
+          <h3><span class="tsd-flag ts-flagStatic">Static</span> decrypt</h3>
+          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+            <li class="tsd-signature tsd-kind-icon">decrypt<span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span>{ iv: string, content: string }<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"></li>
+          </ul>
+          <ul class="tsd-descriptions">
+            <li class="tsd-description">
+              <aside class="tsd-sources">
+                <ul>
+                  <li>Defined in <a href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/crypto/crypto.ts#L65">src/modules/data/crypto/Crypto.ts:65</a></li>
+                </ul>
+              </aside>
+              <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                  <p>Generate data in decrypted form</p>
+                </div>
+              </div>
+              <h4 class="tsd-parameters-title">Parameters</h4>
+              <ul class="tsd-parameters">
+                <li>
+                  <h5>hash: <span  class="tsd-signature-type">{ iv: string, content: string }</span></h5>
                   <div class="tsd-comment tsd-typography">
-                    <div class="lead">
-                      <p>The instance of BOAClient</p>
-                    </div>
                   </div>
                 </li>
               </ul>
-              <h4 class="tsd-returns-title">Returns <a href="account.html" class="tsd-signature-type">Account</a></h4>
-            </li>
-          </ul>
-        </section>
-      </section>
-      </section>
-      <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods</h2>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="accountBalanceSummary" class="tsd-anchor"></a>
-          <h3>account<wbr>Balance<wbr>Summary</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">account<wbr>Balance<wbr>Summary<span
-                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string</span>, amount<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span
-                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L42">src/modules/data/Account.ts:42</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Create an account balance summary</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>address: <span class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5>amount: <span class="tsd-signature-type">number</span></h5>
-                </li>
-              </ul>
               <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>It will return the balance summary of the account</p>
+                class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
+                class="tsd-signature-symbol">&gt;</span></h4>
+              <p>Returns decrypted data</p>
             </li>
           </ul>
         </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getUTXOS" class="tsd-anchor"></a>
-          <h3>get<wbr>UTXOS</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>UTXOS<span class="tsd-signature-symbol">(</span>address<span
-                class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>)</span><span
-                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L82">src/modules/data/Account.ts:82</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request UTXOs of public key</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>address: <span class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getSelfBalance" class="tsd-anchor"></a>
-          <h3>get<wbr>Self<wbr>Balance</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Self<wbr>Balance<span
-                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
-              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L126">src/modules/data/Account.ts:126</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request balance of public key</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>address: <span class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getTotalBalance" class="tsd-anchor"></a>
-          <h3>get<wbr>Total<wbr>Balance</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Balance<span
-                class="tsd-signature-symbol">(</span>addresses<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>)</span><span
-                class="tsd-signature-symbol">: </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L198">src/modules/data/Account.ts:198</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request balance of public keys</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>addresses: <span class="tsd-signature-symbol">: </span><span
-                      class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
-                      class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getTransactionHistory" class="tsd-anchor"></a>
-          <h3>get<wbr>Transaction<wbr>History</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>History<span
-                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string, type<span class="tsd-signature-symbol">: </span><span
-                  class="tsd-signature-type">string, beginDate<span class="tsd-signature-symbol">: </span><span
-                    class="tsd-signature-type">string, endDate<span class="tsd-signature-symbol">: </span><span
-                      class="tsd-signature-type">string, peer<span class="tsd-signature-symbol">: </span><span
-                        class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
-                        class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></span>,
-                    pageSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string,
-                      page<span class="tsd-signature-symbol">: </span><span
-                        class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
-                    </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                    class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L258">src/modules/data/Account.ts:258</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request transaction history of public key</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>address: <span class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> type: <span
-                      class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> beginDate: <span
-                      class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> endDate: <span
-                      class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> peer: </span><span
-                      class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span
-                      class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> pageSize: <span
-                      class="tsd-signature-type">string</span></h5>
-                </li>
-                <li>
-                  <h5><span class="tsd-flag ts-flagOptional">Optional</span> page: <span
-                      class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getTransactionOverview" class="tsd-anchor"></a>
-          <h3>get<wbr>Transaction<wbr>Overview</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Overview<span
-                class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
-              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L402">src/modules/data/Account.ts:402</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request transaction overview of transaction hash</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>txHash: <span class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getPendingTransactions" class="tsd-anchor"></a>
-          <h3>get<wbr>Pending<wbr>Transactions</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Pending<wbr>Transactions<span
-                class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
-              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L445">src/modules/data/Account.ts:445</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request pending transactions of transaction account</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>address: <span class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-        <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-          <a name="getPendingTransactionOverview" class="tsd-anchor"></a>
-          <h3>get<wbr>Pending<wbr>Transaction<wbr>Overview</h3>
-          <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-            <li class="tsd-signature tsd-kind-icon">get<wbr>Pending<wbr>Transaction<wbr>Overview<span
-                class="tsd-signature-symbol">(</span>txHash<span class="tsd-signature-symbol">: </span><span
-                class="tsd-signature-type">string</span>)</span><span class="tsd-signature-symbol">:
-              </span>Promise</span><span class="tsd-signature-symbol">&lt;</span><span
-                class="tsd-signature-type">Object</span></span><span class="tsd-signature-symbol">&gt;</span></li>
-          </ul>
-          <ul class="tsd-descriptions">
-            <li class="tsd-description">
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in <a
-                      href="https://github.com/faisal-naveed-akbar/wallet-lib/tree/flash-layer-latest/src/modules/data/Account.ts#L490">src/modules/data/Account.ts:490</a>
-                  </li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>Request pending transaction overview of transaction hash</p>
-                </div>
-              </div>
-              <h4 class="tsd-parameters-title">Parameters</h4>
-              <ul class="tsd-parameters">
-                <li>
-                  <h5>txHash: <span class="tsd-signature-type">string</span></h5>
-                </li>
-              </ul>
-              <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span
-                  class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span
-                  class="tsd-signature-symbol">&gt;</span></h4>
-              <p>Promise that resolves or rejects with response from the Stoa</p>
-            </li>
-          </ul>
-        </section>
-      </section>
       <footer>
         <div class="container">
           <h2>Legend</h2>
